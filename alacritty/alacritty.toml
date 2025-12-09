@@ -1,0 +1,103 @@
+[general]
+live_config_reload = true
+# import = [
+#   "~/.config/alacritty/catppuccin-mocha.toml"
+# ]
+
+[window]
+opacity = 0.8
+decorations = "None"
+blur=true
+padding = {x=2, y=2}
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
+dynamic_padding = true
+
+
+[font]
+size = 13.0
+normal = { family = "Maple Mono NF", style = "Regular" }
+bold = { family = "Maple Mono NF", style = "Bold" }
+italic = { family = "Maple Mono NF", style = "Italic" }
+bold_italic = { family = "Maple Mono NF", style = "Bold Italic" }
+# size = 13.0
+
+[scrolling]
+history=10000
+multiplier=4
+
+[cursor]
+unfocused_hollow = false
+style = {shape="Beam", blinking="On"}
+
+[env]
+TERM = "xterm-256color"
+
+[keyboard]
+bindings = [
+    # --- BASIC CLIPBOARD ---
+    { key = "C", mods = "Control|Shift", action = "Copy" },
+    { key = "V", mods = "Control|Shift", action = "Paste" },
+    { key = "S", mods = "Control|Shift", action = "PasteSelection" },
+
+    # --- SCROLLING ---
+    { key = "Up", mods = "Control|Shift", action = "ScrollLineUp" },
+    { key = "Down", mods = "Control|Shift", action = "ScrollLineDown" },
+    { key = "K", mods = "Control|Shift", action = "ScrollLineUp" },
+    { key = "J", mods = "Control|Shift", action = "ScrollLineDown" },
+    { key = "PageUp", mods = "Control|Shift", action = "ScrollPageUp" },
+    { key = "PageDown", mods = "Control|Shift", action = "ScrollPageDown" },
+    { key = "Home", mods = "Control|Shift", action = "ScrollToTop" },
+    { key = "End", mods = "Control|Shift", action = "ScrollToBottom" },
+
+    # --- WINDOW MANAGEMENT ---
+    { key = "Enter", mods = "Control|Shift", action = "CreateNewWindow" },
+    { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+    { key = "W", mods = "Control|Shift", action = "Quit" },
+
+    # --- FONT SIZE CONTROL ---
+    { key = "Equals", mods = "Control", action = "IncreaseFontSize" },
+    { key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+    { key = "Key0", mods = "Control", action = "ResetFontSize" },
+
+    # --- SEARCH MODE ---
+    { key = "F", mods = "Control|Shift", action = "SearchForward" },
+    { key = "B", mods = "Control|Shift", action = "SearchBackward" },
+    #{ key = "Escape", mods = "None", action = "SearchCancel" },
+
+    # --- CLEAR HISTORY ---
+    { key = "L", mods = "Control|Shift", action = "ClearHistory" },
+    { key = "Backspace", mods = "Control", chars = "\u0017" },
+]
+
+# [working_directory]
+# # Open new terminals in the home directory
+# directory = "~"
+
+[colors.cursor]
+text = "#16181a"
+cursor = "#ffffff"
+
+[colors.selection]
+text = "#ffffff"
+background = "#3c4048"
+
+[colors.normal]
+black = "#8b8786"
+red = "#ff6e5e"
+green = "#5eff6c"
+yellow = "#f1ff5e"
+blue = "#5ea1ff"
+magenta = "#bd5eff"
+cyan = "#5ef1ff"
+white = "#ffffff"
+
+[colors.bright]
+black = "#8b8786"
+red = "#ff6e5e"
+green = "#76ff8a"
+yellow = "#f6ff7a"
+blue = "#7eb9ff"
+magenta = "#d57eff"
+cyan = "#7effff"
+white = "#ffffff"
